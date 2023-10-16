@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- 1. css AOS cdn 연결 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/script.js"></script>
+
+    <!-- Swiper JS : link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- 2.스크립트 cdn 연결 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>LUSH</title>
+</head>
+<body>
+    <div id="wrap">
+        <section class="section banner">
+            <!-- 헤더영역 -->
+            <div class="header-container">
+                <header class="header-area">
+                    <!-- 햄버거버튼 -->
+                    <a href="#none" id="hamburger">
+                        <span></span><span></span>
+                    </a>
+
+                    <div class="left">
+                        <div class="logo"> </div>
+                        <ul class="main-menu">
+                            <li data-tab="tab1"><a href="#none">러쉬소개</a></li>
+                            <li data-tab="tab2"><a href="#none">캠페인</a></li>
+                            <li data-tab="tab3"><a href="#none">스파</a></li>
+                            <li data-tab="tab4"><a href="#none">매장안내</a></li>
+                        </ul>
+                    </div>
+                    <input type="text" placeholder="search">
+                </header>
+            </div>
+            <!-- 서브메뉴박스 -->
+            <div class="sub-menu-box">
+                <ul id="tab1" class="sub-menu intro">
+                    <li class="menu-left">
+                        <div class="sub-menu-detail">
+                            <ul>
+                                <li class="sub-txt"><a href="#none">러쉬소개</a></li>
+                                <li class="sub-txt"><a href="#none">러쉬역사</a></li>
+                                <li class="sub-txt"><a href="#none">이념과 가치</a></li>
+                                <li class="sub-txt"><a href="#none">브랜드정책</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-right">
+                        <a href="#none" class="sub-menu-detail photo">
+                            <img src="./img/submenu1.jpg" alt="">
+                            <img src="./img/submenu2.jpg" alt="">
+                            <img src="./img/submenu3.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <ul id="tab2" class="sub-menu campain">
+                    <li class="menu-left">
+                        <div class="sub-menu-detail">
+                            <ul>
+                                <li class="sub-txt"><a href="#none">기부와 나눔</a></li>
+                                <li class="sub-txt"><a href="#none">자원순환</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-right">
+                        <a href="#none" class="sub-menu-detail photo">
+                            <img src="./img/submenu4.jpg" alt="">
+                            <img src="./img/submenu5.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <ul id="tab3" class="sub-menu spa">
+                    <li class="menu-left">
+                        <div class="sub-menu-detail">
+                            <ul>
+                                <li class="sub-txt"><a href="#none">소개</a></li>
+                                <li class="sub-txt"><a href="#none">이용방법</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-right">
+                        <a href="#none" class="sub-menu-detail photo">
+                            <img src="./img/submenu6.jpg" alt="">
+                            <img src="./img/submenu7.jpg" alt="">
+                            <img src="./img/submenu8.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <ul id="tab4" class="sub-menu store">
+                    <li class="menu-left">
+                        <div class="sub-menu-detail">
+                            <ul>
+                                <li class="sub-txt"><a href="#none">서울(29)</a></li>
+                                <li class="sub-txt"><a href="#none">경기(19)</a></li>
+                                <li class="sub-txt"><a href="#none">경상(11)</a></li>
+                                <li class="sub-txt"><a href="#none">충청(5)</a></li>
+                                <li class="sub-txt"><a href="#none">전라(3)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-right">
+                        <a href="#none" class="sub-menu-detail photo">
+                            <img src="./img/submenu9.jpg" alt="">
+                            <img src="./img/submenu10.jpg" alt="">
+                            <img src="./img/submenu11.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper firstSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="txt-banner">
+                            <p>지친 피부에<br>충전이 필요한 지금!</p>
+                            <button>App Store</button>
+                            <button>Google Play</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="txt-banner">
+                            <p>프레쉬 핸드메이드<br>코스메틱 브랜드</p>
+                            <button>App Store</button>
+                            <button>google Play</button>
+                    </div>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <div class="txt-banner">
+                            <p>아름다운 자연에서 영감 받은<br>영국 전통 스파</p>
+                            <button>App Store</button>
+                            <button>google Play</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide4">
+                        <div class="txt-banner">
+                            <p>마음을 전하는<br> 가장 향기로운 방법</p>
+                            <button>App Store</button>
+                            <button>Google Play</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next change"></div>
+                <div class="swiper-button-prev change"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="section sec-1 layout">
+            <div class="txt-box">
+                <p class="txt-title">러쉬소개</p>
+                <span class="more"><img src="./img/more.png" alt=""></span>
+            </div>
+            <div class="container">
+                <div class="box on">
+                    <img src="./img/section1-1.jpg" alt="">
+                    <div class="s-txt-box">
+                        <h1>러쉬소개</h1>
+                        <p>러쉬는 자연에서 얻은 신선한 재료와 동물실험을 하지 않는 정직한 재료를 사용하여 모든 제품을 손으로 만듭니다.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./img/section1-2.jpg" alt="">
+                    <div class="s-txt-box">
+                        <h1>러쉬역사</h1>
+                        <p>1995년, 러쉬는 영국에 항구도시 풀(Poole)에서 탄생했습니다.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./img/section1-3.jpg" alt="">
+                    <div class="s-txt-box">
+                        <h1>브랜드 정책</h1>
+                        <p>동물과 자연과 사람이 조화롭게 공존하는 세상을 바라는 러쉬 비즈니스의 중심에는 강력한 브랜드 윤리가 자리잡고있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="txt-animation">
+            <p class="track">
+              Lush - hand made with love fresh cosmetics - 100% VEGETERIAN - HANDMADE WITH LOVE - FRESH COSMETICS -
+            </p>
+        </div>
+
+        <section class="section sec-2">
+            <div class="layout">
+                <div class="txt-box">
+                    <div>
+                        <p class="txt-title">베스트</p>
+                        <p class="txt-sub-title">누구나 좋아하는 인기제품을 만나보세요</p>
+                    </div>
+                    <span class="more"><img src="./img/more.png" alt=""></span>
+                </div>
+            </div>
+            <div class="swiper secondSwiper second-arrow">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="layout">
+                        <ul class="best-product">
+                            <li><a href="#none"><img src="./img/section2-1.png" alt="">
+                            </a>
+                            <p>배쓰</p>
+                            </li>
+                            <li><a href="#none"><img src="./img/section2-2.png" alt=""></a>
+                            <p>페이스</p>
+                            </li>
+                            <li><a href="#none"><img src="./img/section2-3.png" alt=""></a>
+                            <p>바디</p>
+                            </li>
+                            <li><a href="#none"><img src="./img/section2-4.png" alt=""></a>
+                            <p>헤어</p>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="layout">
+                        <ul class="best-product">
+                            <li><a href="#none"><img src="./img/section2-5.jpg" alt="">
+                            </a>
+                            <p>마스크오브 매그너민티</p>
+                            </li>
+                            <li><a href="#none"><img src="./img/section2-6.jpg" alt=""></a>
+                            <p>더티 보디 스프레이</p>
+                            </li>
+                            <li><a href="#none"><img src="./img/section2-7.jpg" alt=""></a>
+                            <p>코스메틱 워리어</p>
+                            </li>
+                            <li><a href="#none"><img src="./img/section2-8.jpg" alt=""></a>
+                            <p>카타스트로피 코스메틱</p>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="layout">
+                        <ul class="best-product">
+                            <li><a href="#none"><img src="./img/section2-9.jpg" alt="">
+                            </a>
+                            <p>트와일리엇</p>
+                            </li>
+                            <li><a href="#none"><img src="./img/section2-10.jpg" alt=""></a>
+                            <p>로드 오브 미스룰</p>
+                            </li>
+                            <li><a href="#none"><img src="./img/section2-11.jpg" alt=""></a>
+                            <p>버블바</p>
+                            </li>
+                            <li><a href="#none"><img src="./img/section2-12.jpg" alt=""></a>
+                            <p>럽럽럽</p>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="layout">
+                        <ul class="best-product">
+                            <li><a href="#none"><img src="./img/section2-13.jpg" alt="">
+                            </a>
+                            <p>로즈 아르간 보디 컨디셔너</p>
+                            </li>
+                            <li><a href="#none"><img src="./img/section2-14.jpg" alt=""></a>
+                            <p>레인 보우 펀</p>
+                            </li>
+                            <li><a href="#none"><img src="./img/section2-15.jpg" alt=""></a>
+                            <p>씨 베지터블 솝</p>
+                            </li>
+                            <li><a href="#none"><img src="./img/section2-16.jpg" alt=""></a>
+                            <p>트와일라잇</p>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                  
+                </div>
+                <div class="swiper-button-next b-change"></div>
+                <div class="swiper-button-prev b-change"></div>
+            </div>
+        </section>
+        
+        <div class="txt-animation">
+            <p class="track">
+              Lush - hand made with love fresh cosmetics - 100% VEGETERIAN - HANDMADE WITH LOVE - FRESH COSMETICS -
+            </p>
+        </div>
+
+        <section class="section sec-3">
+            <div class="left"></div>
+            <div class="right">
+                <div class="txt-box">
+                    <div>
+                        <p class="txt-title">샤워</p>
+                        <p class="txt-sub-title">일렁이는 향기와 함께 피부를<br>건강하게 지켜주세요</p>
+                    </div>
+                    <span class="more"><img src="./img/more.png" alt=""></span>
+                </div>
+               
+                <div class="swiper thirdSwiper add">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide group">
+                            <p><img src="./img/section3-1.png" alt=""></p>
+                            <p>더 올리브 브랜치</p>
+                            <p>17,000원</p>
+                        </div>
+                        <div class="swiper-slide group">
+                            <p><img src="./img/section3-2.png" alt=""></p>
+                            <p>더티스프링워시</p>
+                            <p>17,000원</p>
+                        </div>
+                        <div class="swiper-slide group">
+                            <p><img src="./img/section3-3.png" alt=""></p>
+                            <p>그래스</p>
+                            <p>22,000원</p>
+                        </div>
+                        <div class="swiper-slide group">
+                            <p><img src="./img/section3-4.png" alt=""></p>
+                            <p>로즈잼</p>
+                            <p>19,000원</p>
+                        </div>
+                        <div class="swiper-slide group">
+                            <p><img src="./img/section3-5.png" alt=""></p>
+                            <p>해피 히피</p>
+                            <p>17,000원</p>
+                        </div>
+                        <div class="swiper-slide group">
+                            <p><img src="./img/section3-6.png" alt=""></p>
+                            <p>허니 아이 워시드 더 키즈</p>
+                            <p>17,000원</p>
+                        </div>
+                        <div class="swiper-slide group">
+                            <p><img src="./img/section3-7.png" alt=""></p>
+                            <p>로드 오브 미스룰</p>
+                            <p>19,000원</p>
+                        </div>
+                        <div class="swiper-slide group">
+                            <p><img src="./img/section3-1.png" alt=""></p>
+                            <p>베리 베리 크리스마스</p>
+                            <p>19,000원</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sec-4">
+            <div class="tab-inner">
+                <!-- 탭영역 -->
+                <div class="tabtitle">
+                    <ul class="btn">
+                        <!-- 클릭하는 버튼영역 -->
+                        <li data-tab="tab1" class="active">New Products</li>
+                        <li data-tab="tab2">Shower Products</li>
+                        <li data-tab="tab3" class="second">Collaborations</li>
+                        <li data-tab="tab4" class="second">Skincare</li>
+                    </ul>
+                    <p class="txt-box reposition">
+                        <span class="more"><img src="./img/more_white.png" alt=""></span>
+                    </p>
+                </div>
+                
+                <div class="tabs">
+                    <!-- 탭 내용이 들어가는 영역-->
+                    <div class="tab1 active">
+                        <ul class="img-box">
+                            <li>
+                                <p><img src="./img/section4-1.png" alt=""></p>
+                                <p>슬리피</p>
+                                <p>37,000원</p>
+                            </li>
+                            <li>
+                                <p><img src="./img/section4-2.png" alt=""></p>
+                                <p>슬리피</p>
+                                <p>37,000원</p>
+                            </li>
+                            <li>
+                                <p><img src="./img/section4-3.png" alt=""></p>
+                                <p>슬리피</p>
+                                <p>37,000원</p>
+                            </li>
+                            <li>
+                                <p><img src="./img/section4-4.png" alt=""></p>
+                                <p>슬리피</p>
+                                <p>37,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab2">
+                        <ul class="img-box">
+                            <li>
+                                <p><img src="./img/section4-5.png" alt=""></p>
+                                <p>로즈아로간 바디 컨디셔너</p>
+                                <p>44,000원</p>
+                            </li>
+                            <li>
+                                <p><img src="./img/section4-6.png" alt=""></p>
+                                <p>레인보우</p>
+                                <p>22,000원</p>
+                            </li>
+                            <li>
+                                <p><img src="./img/section4-7.png" alt=""></p>
+                                <p>트와일라잇</p>
+                                <p>15,000원</p>
+                            </li>
+                            <li>
+                                <p><img src="./img/section4-8.png" alt=""></p>
+                                <p>매직 크리스탈스</p>
+                                <p>30,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab3">
+                        <ul class="img-box">
+                            <li>
+                                <p><img src="./img/section4-9.png" alt="">
+                                <p>바디붐박스</p>
+                                <p>16,000원</p>
+                            </li>
+                            <li>
+                                <p><img src="./img/section4-10.png" alt="">
+                                <p>바디 배쓰</p>
+                                <p>17,000원</p>
+                            </li>
+                            <li>
+                                <p><img src="./img/section4-11.png" alt="">
+                                <p>바비젤리</p>
+                                <p>25,000원</p>
+                            </li>
+                            <li>
+                                <p><img src="./img/section4-12.png" alt="">
+                                <p>바비핸드백</p>
+                                <p>16,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab4">
+                        <ul class="img-box">
+                            <li>
+                                <p><img src="./img/section4-13.png" alt=""></p>
+                                <p>마스크오브 매그너민티</p>
+                                <p>22,000원</p>
+                            </li>
+                            <li>
+                                <p><img src="./img/section4-14.png" alt="">
+                                <p>코스메틱 워리어</p>
+                                <p>25,000원</p>
+                            </li>
+                            <li>
+                                <p><img src="./img/section4-15.png" alt="">
+                                <p>허벌리즘</p>
+                                <p>22,000원</p>
+                            </li>
+                            <li>
+                                <p><img src="./img/section4-16.png" alt="">
+                                <p>뷰티슬립</p>
+                                <p>30,000원</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sec-5">
+            <div class="box5" data-aos="fade-up">
+                <p>
+                    <p class="txt-title" ></p>
+                    <p class="box5-sub-title"></p>
+                    <button class="btn" data-aos="fade-up">자세히 보기</button>
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="layout f-box">
+                <div class="customer">
+                    <ul>
+                        <li>
+                            <p>고객센터</p>
+                            <p>1644-2357</p>
+                        </li>
+                        <li>
+                            <p>상담전화 13:00 ~16:00 (평일)</p>
+                            <p>webmaster@lush.co.kr</p>
+                        </li>
+                        <li>
+                            <p>상담톡 10:00 ~16:00 (평일)</p>
+                            <p>상담톡 시작하기</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="present">
+                    <p>기업선물</p>
+                    <p>070-4713-8543</p>
+                    <p>order@lush.co.kr</p>
+                </div>
+                <div class="adress">
+                        서울 강남구 학동로 336 (메이트리 빌딩(matree B/D)) 1층 주식회사 러쉬코리아</br>
+                        사이트 운영자 : 주식회사 러쉬코리아 I 대표이사 : 우미령</br>
+                        사업자 등록번호 : 201-81-77964 사업자정보확인</br>
+                        통신판매업 신고번호 : 2012-서울서초-0647 I 개인정보보호책임자 : 신상훈</br>
+                        COPYRIGHT © LUSHKOREA.CO.LTD.ALL RIGHTS RESERVED.</br>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- 상단 이동 버튼 -->
+        <div class="top-btn">
+            <img src="./img/top_btn.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
