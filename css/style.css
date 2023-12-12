@@ -614,6 +614,9 @@ body {
   color: #fff;
   padding: 20px 10px;
   font-size: 0.875rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .f-box{
